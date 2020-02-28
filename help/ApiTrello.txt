@@ -1,0 +1,37 @@
+﻿//ULTRACARGO - (Acessos)
+myBoard=5d6d25aacb7aca14b55013b9
+myOrganizations=5dc080a1858d9f0e64e74816
+myKey=gerar no site trello.com/app-key 
+myToken= gerar no site trello.com/app-key
+
+fields={padrão = all -> fields separados por virgulas - ex: fields=id,name}
+limit={informar a qtd a ser listada ex: limit=10}
+filter={padrão = open -> de acordo com tipo de seleção ex: filter=all,closed,none,open,visible}
+
+//Permissões de acessos e documentação de acesso
+https://trello.com/app-key
+https://developers.trello.com/reference#lists-nested-resource
+
+//Board - (Projeto)
+api.trello.com/1/boards/{myBoard}?key={myKey}&token={myToken}
+
+//Lists (Listas)
+api.trello.com/1/boards/{myBoard}/lists/?key={myKey}&token={myToken}
+api.trello.com/1/lists/{IdLista}/?key={myKey}&token={myToken}
+api.trello.com/1/lists/{IdLista}/cards/?key={myKey}&token={myToken}
+api.trello.com/1/lists/{IdLista}/actions/?key={myKey}&token={myToken}
+
+//Members - (Usuários)
+api.trello.com/1/boards/{myBoard}/members/?key={myKey}&token={myToken}
+
+//Cards (Cartões)
+api.trello.com/1/boards/{myBoard}/cards/?key={myKey}&token={myToken}
+api.trello.com/1/cards/{myCard}/?key={myKey}&token={myToken}
+api.trello.com/1/cards/{myCard}/actions/?key={myKey}&token={myToken}
+api.trello.com/1/cards/{myCard}/customFieldItems/?key={myKey}&token={myToken}
+
+//Actions - (Ações)
+api.trello.com/1/boards/{myBoard}/actions/?key={myKey}&token={myToken}
+
+//LABELS - (Etiquetas)
+api.trello.com/1/boards/{myBoard}/labels/?key={myKey}&token={myToken}
